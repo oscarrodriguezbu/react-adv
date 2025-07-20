@@ -9,46 +9,40 @@ import logo from '../logo.svg'
 
 export const Navigation = () => {
     return (
-        <Suspense fallback={ <span>Loading...</span> }>
+        <Suspense fallback={<span>Loading...</span>}>
+            {/* Suspense sirve para decirle a react que cuando cargue algo haga otra cosa mientras tanto */}
 
             <BrowserRouter>
                 <div className="main-layout">
                     <nav>
-                        <img src={ logo } alt="React Logo" />
+                        <img src={logo} alt="React Logo" />
                         <ul>
-                            
                             {
                                 routes.map(({ to, name }) => (
-                                    <li key={ to }>
-                                        <NavLink 
-                                            to={ to } 
-                                            className={ ({ isActive }) => isActive ? 'nav-active' : '' }>
-                                            { name }
+                                    <li key={to}>
+                                        <NavLink
+                                            to={to}
+                                            className={({ isActive }) => isActive ? 'nav-active' : ''}>
+                                            {name}
                                         </NavLink>
                                     </li>
                                 ))
-                                    
+
                             }
-                            
-                            
                         </ul>
                     </nav>
 
-
                     <Routes>
-                        
                         {
-                            routes.map( ({ path, Component  }) => (
-                                <Route 
-                                    key={ path }
-                                    path={ path }
-                                    element={ <Component /> } 
+                            routes.map(({ path, Component }) => (
+                                <Route
+                                    key={path}
+                                    path={path}
+                                    element={<Component />}
                                 />
                             ))
                         }
-
-                        
-                        <Route path="/*" element={ <Navigate to={ routes[0].to } replace /> } />
+                        <Route path="/*" element={<Navigate to={routes[0].to} replace />} />
                     </Routes>
 
                 </div>

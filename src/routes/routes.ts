@@ -7,15 +7,15 @@ type JSXComponent = () => JSX.Element;
 interface Route {
     to: string;
     path: string;
-    Component: LazyExoticComponent<JSXComponent> | JSXComponent;
+    Component: LazyExoticComponent<JSXComponent> | JSXComponent; //componente normal o con lazyload
     name: string;
 }
 
-
+//* Los componentes deben exportarse por defecto
 const Lazy1 = lazy(() => import(/* webpackChunkName: "LazyPage1" */ '../01-lazyload/pages/LazyPage1'));
 const Lazy2 = lazy(() => import(/* webpackChunkName: "LazyPage2" */ '../01-lazyload/pages/LazyPage2'));
 const Lazy3 = lazy(() => import(/* webpackChunkName: "LazyPage3" */ '../01-lazyload/pages/LazyPage3'));
-
+/* webpackChunkName: "LazyPage3" */ //es para cambiar el nombre del chunk
 
 
 
