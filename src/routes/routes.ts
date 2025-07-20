@@ -8,7 +8,8 @@ interface Route {
     component: LazyExoticComponent<JSXComponent> | JSXComponent,
     name: string;
     children?: Route[]
-}
+}  // en types las propiedades siempre tienen que ir en camelcase, no se recomienda iniciar con mayusculas
+//pero component podria crearse con mayuscula, pues asi se necesita en el html
 
 const LazyPage1 = lazy( () => import(/* webpackChunkName: "LazyPage1" */'../01-lazyload/pages/LazyPage1') );
 const LazyPage2 = lazy( () => import(/* webpackChunkName: "LazyPage2" */'../01-lazyload/pages/LazyPage2') );
