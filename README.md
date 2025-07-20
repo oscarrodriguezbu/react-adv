@@ -45,8 +45,11 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Ramas disponibles en este repositorio
+Este proyecto contiene múltiples ramas que representan diferentes ejemplos o enfoques. Puedes cambiar entre ellas usando los siguientes comandos:
 
 ## Acceder a las ramas del pryecto original donde se hizo el fork:
+```bash
 git checkout -b component-compound upstream/component-compound
 git checkout -b component-control-props upstream/component-control-props
 git checkout -b component-control-props-alt upstream/component-control-props-alt
@@ -59,9 +62,10 @@ git checkout -b lazyload-nested upstream/lazyload-nested
 git checkout -b lazyload-nested-rrd6 upstream/lazyload-nested-rrd6
 git checkout -b lazyload-rrd-v6 upstream/lazyload-rrd-v6
 git checkout -b main-router-v6 upstream/main-router-v6
-
+```
 
 ## Acceder a las ramas de mi proyecto fork:
+```bash
 git checkout component-compound
 git checkout component-control-props
 git checkout component-control-props-alt
@@ -74,3 +78,4 @@ git checkout lazyload-nested
 git checkout lazyload-nested-rrd6
 git checkout lazyload-rrd-v6
 git checkout main-router-v6
+```
