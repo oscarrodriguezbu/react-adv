@@ -44,3 +44,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Acceder a las ramas del pryecto original donde se hizo el fork:
+git checkout -b component-compound upstream/component-compound
+git checkout -b component-control-props upstream/component-control-props
+git checkout -b component-control-props-alt upstream/component-control-props-alt
+git checkout -b component-extend-styles upstream/component-extend-styles
+git checkout -b component-state-initializer upstream/component-state-initializer
+git checkout -b forms upstream/forms
+git checkout -b forms-dynamic upstream/forms-dynamic
+git checkout -b lazyload upstream/lazyload
+git checkout -b lazyload-nested upstream/lazyload-nested
+git checkout -b lazyload-nested-rrd6 upstream/lazyload-nested-rrd6
+git checkout -b lazyload-rrd-v6 upstream/lazyload-rrd-v6
+git checkout -b main-router-v6 upstream/main-router-v6
+
+
+## Acceder a las ramas de mi proyecto fork:
+git checkout component-compound
+git checkout component-control-props
+git checkout component-control-props-alt
+git checkout component-extend-styles
+git checkout component-state-initializer
+git checkout forms
+git checkout forms-dynamic
+git checkout lazyload
+git checkout lazyload-nested
+git checkout lazyload-nested-rrd6
+git checkout lazyload-rrd-v6
+git checkout main-router-v6
