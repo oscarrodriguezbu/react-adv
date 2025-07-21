@@ -79,3 +79,10 @@ git checkout lazyload-nested-rrd6
 git checkout lazyload-rrd-v6
 git checkout main-router-v6
 ```
+## Subir cambios a una rama de mi github:
+```bash
+git add .
+git commit -m "Comentarios agregados"
+git push -u origin component-compound
+```
+Si se pone git push entonces intenta acceder a la rama del repo orignal
