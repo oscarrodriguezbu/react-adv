@@ -21,13 +21,17 @@ export const ShoppingPage = () => {
                 flexWrap: 'wrap'
             }}>
 
-                <ProductCard product={ product }>
+                {/* AMBAS OPCIONES SON VALIDAS */}
+                
+                {/*Compount component pattern donde todo está en ProductCard que mantienen una relacion directa entre si*/}
+                <ProductCard product={product}>
                     <ProductCard.Image />
-                    <ProductCard.Title title={ 'Hola Mundo' } />
-                    <ProductCard.Buttons  />
+                    <ProductCard.Title title={'Hola Mundo'} />
+                    <ProductCard.Buttons />
                 </ProductCard>
 
-                <ProductCard product={ product }>
+                {/* Compount component pattern */}
+                <ProductCard product={product}>
                     <ProductImage />
                     <ProductTitle />
                     <ProductButtons />

@@ -5,8 +5,9 @@ import { ProductContextProps, ProductCardProps } from '../interfaces/interfaces'
 
 import styles from '../styles/styles.module.css'
 
+//COMPARTIR INFORMACION ENTRE PADRE E HIJOS
 export const ProductContext = createContext({} as ProductContextProps);
-const { Provider } = ProductContext;
+const { Provider } = ProductContext; //Provider ES UN HIGH ORDER COMPONENT
 
 
 export const ProductCard = ({ children, product }: ProductCardProps ) => {
@@ -14,7 +15,7 @@ export const ProductCard = ({ children, product }: ProductCardProps ) => {
     const { counter, increaseBy } = useProduct();
 
     return (
-        <Provider value={{
+        <Provider value={{/* INFO QUE NECESITAN LOS HIJOS */
             counter,
             increaseBy,
             product
