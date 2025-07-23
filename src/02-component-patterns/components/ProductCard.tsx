@@ -9,7 +9,8 @@ export const ProductContext = createContext({} as ProductContextProps);
 const { Provider } = ProductContext;
 
 
-
+//propiedades del componente puede llamarse desde un archivo a parte de interfaz pero se recomienda colocarlo
+//en el mismo archivo del componente
 export interface Props {
     product: Product;
     children?: React.ReactElement | React.ReactElement[];
