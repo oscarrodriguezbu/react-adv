@@ -5,16 +5,16 @@ import { Product, ProductInCart } from '../interfaces/interfaces';
 
 export const useShoppingCart = () => {
 
-    const [ shoppingCart, setShoppingCart ] = useState<{ [key:string]: ProductInCart  }>({});
+    const [shoppingCart, setShoppingCart] = useState<{ [key: string]: ProductInCart }>({});
 
-    const onProductCountChange = ({ count, product }: { count:number, product: Product }) => {
+    const onProductCountChange = ({ count, product }: { count: number, product: Product }) => {
         // console.log( count, product);
-        
-        setShoppingCart( oldShoppingCart => {
+
+        setShoppingCart(oldShoppingCart => {
 
             const productInCart: ProductInCart = oldShoppingCart[product.id] || { ...product, count: 0 };
 
-            if( Math.max( productInCart.count + count, 0 ) > 0 ) {
+            if (Math.max(productInCart.count + count, 0) > 0) { //si todo eso es mayor a cero enconces...
                 productInCart.count += count;
                 return {
                     ...oldShoppingCart,
@@ -23,13 +23,13 @@ export const useShoppingCart = () => {
             }
 
             // Borrar el producto
-            const { [product.id]: toDelete, ...rest  } = oldShoppingCart;
+            const { [product.id]: toDelete, ...rest } = oldShoppingCart; //eliminacion de un elemento con desestructuracion
             return rest;
 
-
+            //* Implementacion sencilla y practica
             // if( count === 0 ) {
-                // const {  [product.id]: toDelete, ...rest  } = oldShoppingCart;
-                // return rest;
+            // const {  [product.id]: toDelete, ...rest  } = oldShoppingCart;
+            // return rest;
             // }
 
             // return {
