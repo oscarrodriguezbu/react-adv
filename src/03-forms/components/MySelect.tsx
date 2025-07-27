@@ -8,15 +8,15 @@ interface Props {
 }
 
 
-export const MySelect = ( { label, ...props }: Props ) => {
+export const MySelect = ({ label, ...props }: Props) => {
 
-    const [ field ] = useField(props)
+    const [field] = useField(props)
 
     return (
         <>
-            <label htmlFor={ props.id || props.name }>{ label }</label>
-            <select { ...field } { ...props } />
-            <ErrorMessage name={ props.name } component="span" />
+            <label htmlFor={props.id || props.name}>{label}</label>
+            <select {...field} {...props} />
+            <ErrorMessage name={props.name} component="span" />
         </>
     )
 }

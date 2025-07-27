@@ -7,17 +7,17 @@ interface Props {
 }
 
 
-export const MyCheckbox = ({ label, ...props }: Props ) => {
+export const MyCheckbox = ({ label, ...props }: Props) => {
 
-    const [ field ] = useField({ ...props, type: 'checkbox' });
+    const [field] = useField({ ...props, type: 'checkbox' });
 
     return (
         <>
             <label>
-                <input type="checkbox" { ...field } { ...props } />
-                { label }            
+                <input type="checkbox" {...field} {...props} />
+                {label}
             </label>
-            <ErrorMessage name={ props.name } component="span" />
+            <ErrorMessage name={props.name} component="span" />
         </>
     )
 }
