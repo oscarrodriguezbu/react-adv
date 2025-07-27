@@ -5,7 +5,7 @@ import { MyTextInput } from '../components';
 import '../styles/styles.css';
 
 export const RegisterFormikPage = () => {
-    
+
     return (
         <div>
             <h1>Register Formik Page</h1>
@@ -17,50 +17,50 @@ export const RegisterFormikPage = () => {
                     password1: '',
                     password2: '',
                 }}
-                onSubmit={ (values) => {
+                onSubmit={(values) => {
                     console.log(values)
                 }}
                 validationSchema={
                     Yup.object({
                         name: Yup.string()
-                                    .min(2, 'El nombre debe de ser de 3 caracteres o mas')
-                                    .max(15, 'El nombre debe de ser menor de 15 caracteres')
-                                    .required('Requerido'),
+                            .min(2, 'El nombre debe de ser de 3 caracteres o mas')
+                            .max(15, 'El nombre debe de ser menor de 15 caracteres')
+                            .required('Requerido'),
                         email: Yup.string()
-                                    .email('Revise el formato del correo')
-                                    .required('Requerido'),
+                            .email('Revise el formato del correo')
+                            .required('Requerido'),
                         password1: Yup.string()
-                                        .min( 6, 'Mínimo 6 letras' )
-                                        .required('Requerido'),
+                            .min(6, 'Mínimo 6 letras')
+                            .required('Requerido'),
                         password2: Yup.string()
-                                        .oneOf([ Yup.ref('password1') ], 'Las contraseñas no son iguales')
-                                        .required('Requerido')
+                            .oneOf([Yup.ref('password1')], 'Las contraseñas no son iguales')
+                            .required('Requerido')
                     })
                 }
             >
-                { ({ handleReset }) => (
+                {({ handleReset }) => (
                     <Form>
-                        <MyTextInput 
+                        <MyTextInput
                             label="Nombre"
                             name="name"
-                            placeholder="Fernando"
+                            placeholder="Oscar"
                         />
 
-                        <MyTextInput 
+                        <MyTextInput
                             label="Email"
                             name="email"
                             type="email"
                             placeholder="john@google.com"
                         />
 
-                        <MyTextInput 
+                        <MyTextInput
                             label="Password"
                             name="password1"
                             type="password"
                             placeholder="******"
                         />
 
-                        <MyTextInput 
+                        <MyTextInput
                             label="Confirm password"
                             name="password2"
                             type="password"
@@ -69,11 +69,11 @@ export const RegisterFormikPage = () => {
 
 
                         <button type="submit">Create</button>
-                        
-                        <button type="button" onClick={ handleReset }>Reset Form</button>
+
+                        <button type="button" onClick={handleReset}>Reset Form</button>
                     </Form>
                 )}
-                
+
 
             </Formik>
 
