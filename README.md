@@ -86,3 +86,18 @@ git commit -m "Comentarios agregados"
 git push -u origin component-compound
 ```
 Si se pone git push entonces intenta acceder a la rama del repo orignal
+
+## Screenshots
+<img width="1432" height="908" alt="01-compount-component-pattern" src="https://github.com/user-attachments/assets/a2401eb3-e7f3-419d-9153-33e87ab16360" />
+<img width="1220" height="748" alt="02-Patrones-componentes-extensible-styles" src="https://github.com/user-attachments/assets/ebf1d24d-b564-4b3d-ac7c-8d5c15c31222" />
+<img width="1415" height="705" alt="03-Patrones-componentes-Control-Props" src="https://github.com/user-attachments/assets/6b4ff7e1-de30-4cbe-ad8f-8bb3c1ea6f3c" />
+<img width="923" height="783" alt="04-state-initializer" src="https://github.com/user-attachments/assets/513c543e-49eb-4ade-ad35-2b0276f6c071" />
+<img width="956" height="653" alt="05-formik-1" src="https://github.com/user-attachments/assets/17debe3d-ced9-45cf-b2f6-c8a971306ff0" />
+<img width="889" height="565" alt="05-formik-2" src="https://github.com/user-attachments/assets/fb674dd9-8455-4114-bbff-f64adfdf2d14" />
+<img width="875" height="595" alt="05-formik-3" src="https://github.com/user-attachments/assets/ad8097c5-7ddc-4c61-8631-a92493214b90" />
+<img width="866" height="714" alt="05-formik-4" src="https://github.com/user-attachments/assets/b036131c-4bbd-452a-9830-7965105773bd" />
+<img width="873" height="720" alt="05-formik-6" src="https://github.com/user-attachments/assets/4cfa21c1-94dc-46e0-95d3-70d91a2b149d" />
+<img width="890" height="670" alt="06-formik-dynamic-1" src="https://github.com/user-attachments/assets/377a67cf-6785-493b-a081-155fb9fefacc" />
+<img width="875" height="576" alt="06-formik-dynamic-2" src="https://github.com/user-attachments/assets/0f79530c-29e6-4e7d-9106-b7e6979e1578" />
+
+
